@@ -1,0 +1,297 @@
+/* NAV */
+.container-app nav .box-shadow .box-menu a.menu.courses {
+  border: 0.5px solid #a3a3a3;
+  box-sizing: border-box;
+}
+/* NAV */
+
+/* MAIN */
+.container-app main {
+  grid-area: main;
+  border-right: 0.5px solid #a3a3a3;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.container-app main .box-shadow {
+  width: calc(100vw - 4em);
+  max-width: 1030px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 1fr repeat(2, auto);
+}
+
+/* box-top */
+.container-app main .box-shadow .box-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: tomato; */
+}
+
+.container-app main .box-shadow .box-top .box-left {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.container-app main .box-shadow .box-top .box-left .title {
+  display: flex;
+  align-items: flex-end;
+  background-color: #fff;
+  font-family: "Poppins-SemiBold";
+  font-size: 1.4rem;
+}
+
+.container-app main .box-shadow .box-top .box-left .description {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  font-size: 0.75rem;
+  /* background-color: yellowgreen; */
+}
+
+.container-app main .box-shadow .box-top .box-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.container-app main .box-shadow .box-top .box-right .search form input {
+  font-family: "Poppins-Regular";
+  font-size: 0.75rem;
+  border: none;
+  border-bottom: 0.5px solid #a3a3a3;
+  outline: none;
+}
+/* box-top */
+
+/* box-middle */
+.container-app main .box-shadow .box-middle {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  /* background-color: yellowgreen; */
+}
+
+.container-app main .box-shadow .box-middle .top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container-app main .box-shadow .box-middle .top .right {
+  display: flex;
+  column-gap: 15px;
+}
+
+.container-app main .box-shadow .box-middle .top .right a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Poppins-Medium";
+  font-size: 0.85rem;
+}
+
+.container-app main .box-shadow .box-middle .top .right a.complete {
+  text-decoration: underline;
+}
+
+.container-app main .box-shadow .box-middle .bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  /* background-color: turquoise; */
+}
+
+.container-app main .box-shadow .box-middle .bottom .course {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container-app main .box-shadow .box-middle .bottom .course .crs-top img {
+  width: 100%;
+}
+
+.container-app main .box-shadow .box-middle .bottom .course .crs-middle {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.container-app main .box-shadow .box-middle .bottom .course .crs-middle .title {
+  color: #333;
+  font-size: 0.8rem;
+  font-family: "Poppins-Medium";
+  line-height: 1.3em;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .description
+  .duration {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  color: #333;
+  font-size: 0.65rem;
+  font-family: "Poppins-Medium";
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .description
+  .duration
+  img {
+  width: 1.4em;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .description
+  .modul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+  font-size: 0.65rem;
+  font-family: "Poppins-Medium";
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .description
+  .modul
+  img {
+  width: 1.2em;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .progress {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .progress
+  .long {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #a3a3a3;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .progress
+  .long
+  .short {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #4d96ff;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .bottom
+  .course
+  .crs-middle
+  .progress
+  .percent
+  p {
+  font-family: "Poppins-Regular";
+  font-size: 0.7rem;
+}
+/* box-middle */
+
+/* box-bottom */
+.container-app main .box-shadow .box-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.container-app main .box-shadow .box-bottom a {
+  font-family: "Poppins-Medium";
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #333;
+  border: 0.5px solid #a3a3a3;
+  border-radius: 5px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+}
+/* box-bottom */
+
+/* footer */
+.container-app main .box-shadow footer {
+  padding: 15px 0;
+  box-sizing: border-box;
+  font-family: "Poppins-Regular";
+  font-size: 0.8rem;
+  text-align: center;
+}
+/* footer */
+/* MAIN */

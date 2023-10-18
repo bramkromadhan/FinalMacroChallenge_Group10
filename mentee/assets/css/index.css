@@ -1,0 +1,629 @@
+/* NAV */
+.container-app nav .box-shadow .box-menu a.menu.home {
+  border: 0.5px solid #a3a3a3;
+  box-sizing: border-box;
+}
+/* NAV */
+
+/* MAIN */
+.container-app main {
+  grid-area: main;
+  border-right: 0.5px solid #a3a3a3;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.container-app main .box-shadow {
+  width: calc(100vw - 4em);
+  max-width: 1030px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px repeat(2, 1fr) auto;
+}
+
+/* box-top */
+.container-app main .box-shadow .box-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* background-color: tomato; */
+}
+
+.container-app main .box-shadow .box-top .box-left {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.container-app main .box-shadow .box-top .box-left .title {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Poppins-SemiBold";
+  font-size: 1.4rem;
+  background-color: #fff;
+}
+
+.container-app main .box-shadow .box-top .box-left .description {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  font-size: 0.75rem;
+  /* background-color: yellowgreen; */
+}
+/* box-top */
+
+/* box-middle */
+.container-app main .box-shadow .box-middle {
+  display: grid;
+  grid-template-columns: 600px auto;
+  grid-template-rows: 1fr;
+  /* padding: 10px 0;
+  box-sizing: border-box; */
+}
+
+.container-app main .box-shadow .box-middle .box-left {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, 1fr);
+  /* background-color: violet; */
+}
+
+.container-app main .box-shadow .box-middle .box-left .top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: greenyellow; */
+}
+
+.container-app main .box-shadow .box-middle .box-left .top .title {
+  font-family: "Poppins-Medium";
+  font-size: 0.9rem;
+}
+
+/* swiper */
+.container-app main .box-shadow .box-middle .box-left .top .swiper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.7fr auto;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+.container-app main .box-shadow .box-middle .box-left .top .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.2);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container-app main .box-shadow .box-middle .box-left .top .swiper-slide .top {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  font-family: "Poppins-Medium";
+  font-size: 0.75rem;
+  gap: 10px;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .top
+  .swiper-slide
+  .top
+  .thumbnail
+  img {
+  width: 26px;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .top
+  .swiper-slide
+  .top
+  .text {
+  display: flex;
+  align-items: center;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .top
+  .swiper-slide
+  .middle {
+  display: flex;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .top
+  .swiper-slide
+  .middle
+  .progress {
+  width: 100%;
+  height: 0.7em;
+  background-color: rgb(218, 218, 218);
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .top
+  .swiper-slide
+  .middle
+  .progress
+  .shadow {
+  width: 40%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(0, 60, 255);
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .top
+  .swiper-slide
+  .bottom
+  p {
+  text-align: left;
+  font-family: "Poppins-Regular";
+  font-size: 0.55rem;
+}
+/* swiper */
+
+.container-app main .box-shadow .box-middle .box-left .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: turquoise; */
+}
+
+.container-app main .box-shadow .box-middle .box-left .bottom .title {
+  font-family: "Poppins-Medium";
+  font-size: 0.9rem;
+}
+
+.container-app main .box-shadow .box-middle .box-left .bottom .menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: #fff;
+}
+
+.container-app main .box-shadow .box-middle .box-left .bottom .menu .number {
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.2);
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .bottom
+  .menu
+  .number.red {
+  background-color: #ff6b6b;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .bottom
+  .menu
+  .number.yellow {
+  background-color: #ffd93d;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .bottom
+  .menu
+  .number.green {
+  background-color: #6bcb77;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .bottom
+  .menu
+  .number.blue {
+  background-color: #4d96ff;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-left
+  .bottom
+  .menu
+  .number
+  .top {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+main
+  .box-shadow
+  .box-middle
+  .box-left
+  .bottom
+  .menu
+  .number
+  .top
+  .thumbnail
+  img {
+  width: 2.1em;
+}
+
+main .box-shadow .box-middle .box-left .bottom .menu .number .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+main .box-shadow .box-middle .box-left .bottom .menu .number .middle .total {
+  font-size: 1.2rem;
+  font-family: "Poppins-Medium";
+  color: #fff;
+}
+
+main .box-shadow .box-middle .box-left .bottom .menu .number .middle .text {
+  font-size: 0.7rem;
+  font-family: "Poppins-Regular";
+  color: #fff;
+}
+
+main .box-shadow .box-middle .box-left .bottom .menu .number .break {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+main .box-shadow .box-middle .box-left .bottom .menu .number .break .line {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+main .box-shadow .box-middle .box-left .bottom .menu .number .bottom {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+main .box-shadow .box-middle .box-left .bottom .menu .number .bottom p {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: "Poppins-Regular";
+  font-size: 0.7rem;
+}
+
+.container-app main .box-shadow .box-middle .box-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-app main .box-shadow .box-middle .box-right .box-rank {
+  width: calc(100% - 2em);
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.7fr repeat(2, auto) 0.5fr;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.2);
+  gap: 10px;
+  /* background-color: #4d96ff; */
+  background-image: url("../image/patterns.png");
+}
+
+.container-app main .box-shadow .box-middle .box-right .box-rank .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-app main .box-shadow .box-middle .box-right .box-rank .top img {
+  width: 5.5em;
+}
+
+.container-app main .box-shadow .box-middle .box-right .box-rank .middle {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-right
+  .box-rank
+  .middle
+  .box-top
+  .progress {
+  width: 100%;
+  height: 0.75em;
+  background-color: rgb(218, 218, 218);
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-right
+  .box-rank
+  .middle
+  .box-top
+  .progress
+  .shadow {
+  width: 70%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #dd7d00;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-right
+  .box-rank
+  .middle
+  .box-bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+  grid-template-rows: repeat(2, auto);
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-right
+  .box-rank
+  .middle
+  .box-bottom
+  .point {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-family: "Poppins-Medium";
+  font-size: 0.65rem;
+  color: #333;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-right
+  .box-rank
+  .middle
+  .box-bottom
+  .description {
+  line-height: 1.5em;
+  text-align: center;
+  font-family: "Poppins-Regular";
+  font-size: 0.65rem;
+  color: #333;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-middle
+  .box-right
+  .box-rank
+  .middle
+  .box-bottom
+  .point
+  .right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-app main .box-shadow .box-middle .box-right .box-rank .break {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.container-app main .box-shadow .box-middle .box-right .box-rank .break .line {
+  width: 100%;
+  height: 0.5px;
+  padding: 0 60px;
+  box-sizing: border-box;
+  background-color: #a3a3a3;
+}
+
+.container-app main .box-shadow .box-middle .box-right .box-rank .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-app main .box-shadow .box-middle .box-right .box-rank .bottom a {
+  font-family: "Poppins-Medium";
+  font-size: 0.7rem;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #333;
+  text-decoration: none;
+  color: #fff;
+}
+/* box-middle */
+
+/* box-bottom */
+.container-app main .box-shadow .box-bottoms {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.2);
+  overflow: hidden;
+}
+
+.container-app main .box-shadow .box-bottoms .thumbnail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background-image: url("../image/banner.png");
+  background-repeat: no-repeat;
+}
+
+.container-app main .box-shadow .box-bottoms .thumbnail h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "Poppins-Medium";
+}
+
+.container-app main .box-shadow .box-bottoms .thumbnail p {
+  color: #fff;
+  font-size: 0.65rem;
+  font-family: "Poppins-Regular";
+}
+
+.container-app main .box-shadow .box-bottoms .thumbnail a {
+  color: #333;
+  font-size: 0.8rem;
+  font-family: "Poppins-Regular";
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+}
+
+.container-app main .box-shadow .box-bottoms .feature {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+.container-app main .box-shadow .box-bottoms .feature a.ftr-srv {
+  text-decoration: none;
+  color: #333;
+}
+
+.container-app main .box-shadow .box-bottoms .feature a.ftr-srv .service {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-bottoms
+  .feature
+  a.ftr-srv
+  .service
+  .img-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-bottoms
+  .feature
+  a.ftr-srv
+  .service
+  .img-thumbnail
+  img {
+  width: 3.7em;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-bottoms
+  .feature
+  a.ftr-srv
+  .service
+  .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-bottoms
+  .feature
+  a.ftr-srv
+  .service
+  .description
+  .title {
+  font-family: "Poppins-Medium";
+  font-size: 1rem;
+}
+
+.container-app
+  main
+  .box-shadow
+  .box-bottoms
+  .feature
+  a.ftr-srv
+  .service
+  .description
+  .text {
+  font-family: "Poppins-Regular";
+  font-size: 0.65rem;
+}
+/* box-bottom */
+
+/* footer */
+.container-app main .box-shadow footer {
+  padding: 15px 0;
+  box-sizing: border-box;
+  font-family: "Poppins-Regular";
+  font-size: 0.8rem;
+  text-align: center;
+}
+/* footer */
+/* MAIN */

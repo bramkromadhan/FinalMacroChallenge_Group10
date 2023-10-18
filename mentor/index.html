@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+  </head>
+  <body>
+    <div class="container-app">
+      <header>
+        <div class="box-shadow">
+          <div class="box-left">
+            <div class="title">
+              <h3>
+                GDSC
+                <span class="code">
+                  <span style="color: rgb(231, 0, 0); margin-right: -4px"
+                    >C</span
+                  >
+                  <span style="color: rgb(0, 62, 231); margin-right: -4px"
+                    >o</span
+                  >
+                  <span style="color: rgb(0, 179, 60); margin-right: -4px"
+                    >d</span
+                  >
+                  <span style="color: rgb(236, 181, 0); margin-right: -4px"
+                    >e</span
+                  >
+                </span>
+                Lab
+              </h3>
+            </div>
+          </div>
+
+          <div class="box-right">
+            <div class="thumbnail">
+              <div class="img-one">
+                <a href="#notification" class="notif">
+                  <img src="assets/image/notification.png" alt="Notification" />
+                </a>
+              </div>
+
+              <div class="img-two">
+                <a href="setting-profile.html">
+                  <img
+                    src="assets/image/settings_profile.png"
+                    alt="Settings Profile"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="pop-notif" id="notification">
+              <div class="title">
+                <p>Notification</p>
+                <a href="#">
+                  <img src="assets/image/close.png" alt="Close" />
+                </a>
+              </div>
+
+              <div class="message">
+                <div class="box-msg">
+                  <div class="top">
+                    <p>11 June 2023, 09:19 WIB</p>
+                  </div>
+
+                  <div class="bottom">
+                    <p>
+                      BroKoding menjawab "Halo kak, saya sarankan selesaikan
+                      dahulu kelas hingga berhasil seluruhnya.… ..." di thread
+                      Membuat Fungsi Unggah File dan Tambah Produk
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile">
+              <h4>Mentor</h4>
+              <h4>Eko Kurniawan</h4>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <div class="box-shadow">
+          <div class="box-title">
+            <div class="thumbnail">
+              <a href="index.html">
+                <img src="assets/image/logo_gdsc.png" alt="Logo GDSC" />
+              </a>
+            </div>
+
+            <div class="title">
+              <a href="index.html">DashGDSC</a>
+            </div>
+          </div>
+
+          <div class="box-menu">
+            <a href="index.html" class="menu dashboard">
+              <div class="thumbnail">
+                <img src="assets/image/dashboard.png" alt="Dashboard" />
+              </div>
+
+              <div class="feature">
+                <h3>Dashboard</h3>
+              </div>
+            </a>
+
+            <a href="categories.html" class="menu categories">
+              <div class="thumbnail">
+                <img src="assets/image/categories.png" alt="Categories" />
+              </div>
+
+              <div class="feature">
+                <h3>Categories</h3>
+              </div>
+            </a>
+
+            <a href="course-list.html" class="menu courses">
+              <div class="thumbnail">
+                <img src="assets/image/courses.png" alt="Courses" />
+              </div>
+
+              <div class="feature">
+                <h3>Courses</h3>
+              </div>
+            </a>
+
+            <a href="instructor.html" class="menu instructor">
+              <div class="thumbnail intructor">
+                <img src="assets/image/instructor.png" alt="Instructor" />
+              </div>
+
+              <div class="feature intructor">
+                <h3>Instructor</h3>
+              </div>
+            </a>
+
+            <a href="students.html" class="menu students">
+              <div class="thumbnail">
+                <img src="assets/image/students.png" alt="Students" />
+              </div>
+
+              <div class="feature">
+                <h3>Students</h3>
+              </div>
+            </a>
+
+            <a href="setting-profile.html" class="menu settings">
+              <div class="thumbnail">
+                <img src="assets/image/settings.png" alt="Settings" />
+              </div>
+
+              <div class="feature">
+                <h3>Settings</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="box-shadow">
+          <div class="box-top">
+            <div class="box-left">
+              <div class="title">
+                <h1>Dashboard</h1>
+              </div>
+
+              <div class="description">
+                <p>Welcome to Learning Management Dashboard.</p>
+              </div>
+            </div>
+
+            <div class="box-right">
+              <div class="report">
+                <div class="thumbnail">
+                  <img src="assets/image/report.png" alt="Report" />
+                </div>
+
+                <div class="text">
+                  <h3>Report</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-middle">
+            <div class="box-left">
+              <div class="text">
+                <h2>Students Enrolment</h2>
+              </div>
+
+              <canvas id="student_enrolment"></canvas>
+            </div>
+
+            <div class="box-right">
+              <div class="title">
+                <div class="right">
+                  <h2>Top Instructors</h2>
+                </div>
+
+                <div class="left">
+                  <a href="instructor.html">View All</a>
+                </div>
+              </div>
+
+              <div class="list-instructor">
+                <div class="list">
+                  <div class="thumbnail">
+                    <img
+                      src="assets/image/instructor-one.png"
+                      alt="Instructor"
+                    />
+                  </div>
+
+                  <div class="bio">
+                    <p>Zulham Ariyandi</p>
+                    <p>zulhamariyandi@gmail.com</p>
+                  </div>
+
+                  <div class="review">
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="thumbnail">
+                    <img
+                      src="assets/image/instructor-two.png"
+                      alt="Instructor"
+                    />
+                  </div>
+
+                  <div class="bio">
+                    <p>Bram Kahlil</p>
+                    <p>bramkromadhan@gmail.com</p>
+                  </div>
+
+                  <div class="review">
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="thumbnail">
+                    <img
+                      src="assets/image/instructor-three.png"
+                      alt="Instructor"
+                    />
+                  </div>
+
+                  <div class="bio">
+                    <p>Raisa Chintia</p>
+                    <p>raisachintia@gmail.com</p>
+                  </div>
+
+                  <div class="review">
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="thumbnail">
+                    <img
+                      src="assets/image/instructor-four.png"
+                      alt="Instructor"
+                    />
+                  </div>
+
+                  <div class="bio">
+                    <p>Fikri Eka Putra</p>
+                    <p>fikriekaputra@gmail.com</p>
+                  </div>
+
+                  <div class="review">
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                    <img src="assets/image/star.png" alt="Star" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-bottom">
+            <div class="box-left">
+              <div class="title">
+                <div class="left">
+                  <h2>Top Courses</h2>
+                </div>
+
+                <div class="right">
+                  <img src="assets/image/ellipsis.png" alt="Ellipsis" />
+                </div>
+              </div>
+
+              <div class="list-courses">
+                <div class="list">
+                  <div class="thumbnail">
+                    <img src="assets/image/python.png" alt="Python" />
+                  </div>
+
+                  <div class="name">Python Dasar</div>
+
+                  <div class="total">130 Students</div>
+                </div>
+
+                <div class="list">
+                  <div class="thumbnail">
+                    <img src="assets/image/python.png" alt="Python" />
+                  </div>
+
+                  <div class="name">Python Dasar</div>
+
+                  <div class="total">130 Students</div>
+                </div>
+
+                <div class="list">
+                  <div class="thumbnail">
+                    <img src="assets/image/python.png" alt="Python" />
+                  </div>
+
+                  <div class="name">Python Dasar</div>
+
+                  <div class="total">130 Students</div>
+                </div>
+
+                <div class="list">
+                  <div class="thumbnail">
+                    <img src="assets/image/python.png" alt="Python" />
+                  </div>
+
+                  <div class="name">Python Dasar</div>
+
+                  <div class="total">130 Students</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-right">
+              <div class="title">
+                <div class="left">
+                  <h2>Top Categories</h2>
+                </div>
+
+                <div class="right">
+                  <img src="assets/image/ellipsis.png" alt="Ellipsis" />
+                </div>
+              </div>
+
+              <div class="list-categories">
+                <div class="list">
+                  <div class="progress">
+                    <div class="shadow"></div>
+                  </div>
+
+                  <div class="description">
+                    <div class="text">Web Development</div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="progress">
+                    <div class="shadow"></div>
+                  </div>
+
+                  <div class="description">
+                    <div class="text">Data Science</div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="progress">
+                    <div class="shadow"></div>
+                  </div>
+
+                  <div class="description">
+                    <div class="text">Graphics Design</div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="progress">
+                    <div class="shadow"></div>
+                  </div>
+
+                  <div class="description">
+                    <div class="text">Database</div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <div class="progress">
+                    <div class="shadow"></div>
+                  </div>
+
+                  <div class="description">
+                    <div class="text">Mobile Application</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer>
+            <p>&copy; 2020-2023 GDSC.</p>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <!-- Chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/students-enrolement.js"></script>
+    <script src="assets/js/top-instructor.js"></script>
+    <script src="assets/libs/jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

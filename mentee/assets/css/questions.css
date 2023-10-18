@@ -1,0 +1,296 @@
+/* NAV */
+.container-app nav .box-shadow .box-menu a.menu.questions {
+  border: 0.5px solid #a3a3a3;
+  box-sizing: border-box;
+}
+/* NAV */
+
+/* MAIN */
+.container-app main {
+  grid-area: main;
+  border-right: 0.5px solid #a3a3a3;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.container-app main .box-shadow {
+  width: calc(100vw - 4em);
+  max-width: 1030px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 100%) auto;
+  row-gap: 30px;
+}
+
+.container-app main .box-shadow .top {
+  width: calc(100vw - 4em);
+  max-width: 1030px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 1fr repeat(2, auto);
+}
+
+/* box-top */
+.container-app main .box-shadow .top .box-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: tomato; */
+}
+
+.container-app main .box-shadow .top .box-top .box-left {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.container-app main .box-shadow .top .box-top .box-left .title {
+  display: flex;
+  align-items: flex-end;
+  background-color: #fff;
+  font-family: "Poppins-SemiBold";
+  font-size: 1.4rem;
+}
+
+.container-app main .box-shadow .top .box-top .box-left .description {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  font-size: 0.75rem;
+  /* background-color: yellowgreen; */
+}
+
+.container-app main .box-shadow .top .box-top .box-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.container-app main .box-shadow .top .box-top .box-right .search form input {
+  font-family: "Poppins-Regular";
+  font-size: 0.75rem;
+  border: none;
+  border-bottom: 0.5px solid #a3a3a3;
+  outline: none;
+}
+/* box-top */
+
+/* box-middle */
+.container-app main .box-shadow .top .box-middle {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.container-app main .box-shadow .top .box-middle .top {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.container-app main .box-shadow .top .box-middle .top a {
+  font-size: 0.8rem;
+  color: #333;
+  font-family: "Poppins-Regular";
+  text-decoration: none;
+  background-color: #fff;
+  border-bottom: 0.5px solid #333;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.container-app main .box-shadow .top .box-middle .top a:nth-child(1) {
+  color: #4d96ff;
+  border-bottom: 0.5px solid #4d96ff;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom {
+  height: 500px;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 1px;
+  box-sizing: border-box;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 10px 0px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #ffff;
+  padding: 20px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.2);
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .first {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .left {
+  display: flex;
+  align-items: center;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .middle .name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container-app
+  main
+  .box-shadow
+  .top
+  .box-middle
+  .bottom
+  .lead
+  .middle
+  .name
+  h3 {
+  color: #333;
+  font-size: 1.1rem;
+  font-family: "Poppins-Medium";
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .middle .name p {
+  color: #333;
+  font-size: 0.9rem;
+  font-family: "Poppins-Regular";
+}
+
+.container-app
+  main
+  .box-shadow
+  .top
+  .box-middle
+  .bottom
+  .lead
+  .middle
+  .description
+  a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-family: "Poppins-Regular";
+  border-radius: 5px;
+  padding: 2px 6px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #ff6b6b;
+}
+
+.container-app
+  main
+  .box-shadow
+  .top
+  .box-middle
+  .bottom
+  .lead
+  .middle
+  .description
+  a:first-of-type {
+  color: #fff;
+  background-color: #333;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins-Medium";
+  font-size: 0.8rem;
+  background-color: #4d96ff;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.container-app
+  main
+  .box-shadow
+  .top
+  .box-middle
+  .bottom
+  .lead
+  .right
+  p:first-of-type {
+  font-size: 1.2rem;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .second {
+  display: flex;
+  align-items: center;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .thrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.5px solid #a3a3a3;
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .thrid a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(51, 51, 51, 0.2);
+  font-size: 0.85rem;
+  font-family: "Poppins-Regular";
+}
+
+.container-app main .box-shadow .top .box-middle .bottom .lead .thrid p {
+  color: #333;
+  font-size: 0.85rem;
+  font-family: "Poppins-Regular";
+}
+/* box-middle */
+
+/* box-bottom */
+.container-app main .box-shadow .top .box-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.container-app main .box-shadow .top .box-bottom a {
+  font-family: "Poppins-Medium";
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #333;
+  border: 0.5px solid #a3a3a3;
+  border-radius: 5px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+}
+/* box-bottom */
+
+/* footer */
+.container-app main .box-shadow footer {
+  padding: 15px 0;
+  box-sizing: border-box;
+  font-family: "Poppins-Regular";
+  font-size: 0.8rem;
+  text-align: center;
+}
+/* footer */
+/* MAIN */

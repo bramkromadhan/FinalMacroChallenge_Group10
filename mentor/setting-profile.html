@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Setting Profile</title>
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/app-setting.css" />
+    <link rel="stylesheet" href="assets/css/setting-profile.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+  </head>
+  <body>
+    <div class="container-app">
+      <header>
+        <div class="box-shadow">
+          <div class="box-left">
+            <div class="title">
+              <h3>
+                GDSC
+                <span class="code">
+                  <span style="color: rgb(231, 0, 0); margin-right: -4px"
+                    >C</span
+                  >
+                  <span style="color: rgb(0, 62, 231); margin-right: -4px"
+                    >o</span
+                  >
+                  <span style="color: rgb(0, 179, 60); margin-right: -4px"
+                    >d</span
+                  >
+                  <span style="color: rgb(236, 181, 0); margin-right: -4px"
+                    >e</span
+                  >
+                </span>
+                Lab
+              </h3>
+            </div>
+          </div>
+
+          <div class="box-right">
+            <div class="thumbnail">
+              <div class="img-one">
+                <a href="#notification" class="notif">
+                  <img src="assets/image/notification.png" alt="Notification" />
+                </a>
+              </div>
+
+              <div class="img-two">
+                <a href="setting-profile.html">
+                  <img
+                    src="assets/image/settings_profile.png"
+                    alt="Settings Profile"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="pop-notif" id="notification">
+              <div class="title">
+                <p>Notification</p>
+                <a href="#">
+                  <img src="assets/image/close.png" alt="Close" />
+                </a>
+              </div>
+
+              <div class="message">
+                <div class="box-msg">
+                  <div class="top">
+                    <p>11 June 2023, 09:19 WIB</p>
+                  </div>
+
+                  <div class="bottom">
+                    <p>
+                      BroKoding menjawab "Halo kak, saya sarankan selesaikan
+                      dahulu kelas hingga berhasil seluruhnya.… ..." di thread
+                      Membuat Fungsi Unggah File dan Tambah Produk
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile">
+              <h4>Mentor</h4>
+              <h4>Eko Kurniawan</h4>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <div class="box-shadow">
+          <div class="box-title">
+            <div class="thumbnail">
+              <a href="index.html">
+                <img src="assets/image/logo_gdsc.png" alt="Logo GDSC" />
+              </a>
+            </div>
+
+            <div class="title">
+              <a href="index.html">DashGDSC</a>
+            </div>
+          </div>
+
+          <div class="box-menu">
+            <a href="index.html" class="menu dashboard">
+              <div class="thumbnail">
+                <img src="assets/image/dashboard.png" alt="Dashboard" />
+              </div>
+
+              <div class="feature">
+                <h3>Dashboard</h3>
+              </div>
+            </a>
+
+            <a href="setting-profile.html" class="menu profile">
+              <div class="thumbnail intructor">
+                <img src="assets/image/instructor.png" alt="Instructor" />
+              </div>
+
+              <div class="feature intructor">
+                <h3>My Profile</h3>
+              </div>
+            </a>
+
+            <a href="setting-password.html" class="menu password">
+              <div class="thumbnail">
+                <img src="assets/image/my_password.png" alt="My Password" />
+              </div>
+
+              <div class="feature">
+                <h3>My Password</h3>
+              </div>
+            </a>
+
+            <div class="break">
+              <div class="line"></div>
+            </div>
+
+            <a href="login.html" class="menu students">
+              <div class="thumbnail">
+                <img src="assets/image/logout.png" alt="Logout" />
+              </div>
+
+              <div class="feature">
+                <h3>Logout</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="box-shadow">
+          <div class="box-top">
+            <div class="box-left">
+              <div class="title">
+                <h1>Setting Profile</h1>
+              </div>
+
+              <div class="description">
+                <p>Welcome to Setting Profile Page</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-middle">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="assets/image/photo_profile.png" alt="Photo Profile" />
+              </div>
+
+              <div class="bio">
+                <p>Eko Kurniawan</p>
+                <p>Mentor</p>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <div class="mb-3">
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+            </div>
+          </div>
+
+          <div class="box-bottom">
+            <form action="">
+              <div class="input">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="input first name"
+                />
+              </div>
+
+              <div class="input">
+                <label for="lastName">last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="input last name"
+                />
+              </div>
+
+              <div class="input">
+                <label for="lastName">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="input email"
+                />
+              </div>
+
+              <div class="input">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="input phone number"
+                />
+              </div>
+
+              <div class="input">
+                <label for="phone">Gender</label>
+                <div class="radio">
+                  <div class="radio-one">
+                    <input type="radio" name="gender" id="gender" />
+                    Male
+                  </div>
+
+                  <div class="radio-one">
+                    <input type="radio" name="gender" id="gender" />
+                    Female
+                  </div>
+                </div>
+              </div>
+
+              <div class="button-submit">
+                <a href="#">Save</a>
+              </div>
+            </form>
+          </div>
+
+          <footer>
+            <p>&copy; 2020-2023 GDSC.</p>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <!-- Chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/students-enrolement.js"></script>
+    <script src="assets/js/top-instructor.js"></script>
+    <script src="assets/libs/jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
